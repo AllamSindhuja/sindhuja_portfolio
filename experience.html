@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="bg.jpg">
+    <title>My portfolio- Experience
+    </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <label for="theme-switch">Dark Mode</label>
+            <input type="checkbox" id="theme-switch">
+        </div>
+    </header>
+    <section class="content">
+        <h2>Work/Volunteer Experience</h2>
+        <h3> </h3>
+        <div class="experience-item" onclick="showExperienceDetails('IIIT- H', 'NLP Expertise', '10th Feb 2022 - 10th May 2022', 'During my NLP internship, I immersed myself in the intricate world of Natural Language Processing, applying theoretical knowledge to real-world projects. Engaging in tasks such as sentiment analysis and language modeling, I honed my skills in leveraging machine learning algorithms for language understanding. This hands-on experience significantly deepened my understanding of NLP applications and their impact on advancing language technologies.')" >
+            <img src="job1.jpg" alt="Company A Logo">
+            <h4>IIIT- H</h4>
+        </div>
+
+        <div class="experience-item" onclick="showExperienceDetails('RGUKTB', 'Volunteer', 'Mar 2018 - Dec 2019', 'As a dedicated volunteer at IIIT Basar, I actively contributed to facilitating IT workshops from March 2018 to December 2019. During this period, I played a pivotal role in empowering participants with valuable IT skills, fostering a collaborative and enriching learning environment.')">
+            <img src="job2.jpeg" alt="Organization B Logo" width="200" height="60">
+            <h4>RGUKTB</h4>
+        </div>
+
+        <!-- Add more experience items as needed -->
+    </section>
+
+    <!-- Modal for experience details -->
+    <div id="experience-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeExperienceDetails()">&times;</span>
+            <h2 id="experience-company"></h2>
+            <p id="experience-role"></p>
+            <p id="experience-time"></p>
+            <p id="experience-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
